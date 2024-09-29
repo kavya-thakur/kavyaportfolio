@@ -36,7 +36,7 @@ secoundpageanimation = gsap.timeline()
 //     delay :0.5
 // })
 
-if (window.innerWidth >= 501) {
+if (window.innerWidth <= "500px") {
   pageoneanimations.from(".hero-heading1 h1 , .hero-heading2 h1"  , {
     y : "100%",
     duration :0.6,
@@ -49,16 +49,16 @@ pageoneanimations.from(".svg",{
 pageoneanimations.from(".img",{
   opacity : 0,
 })
-secoundpageanimation.from("#page2 .about", {
+secoundpageanimation.from("#page2 .about , .about h3", {
   y : "100%" ,
   duration :0.6,
-    // ease : Power4 ,
+    ease : Power4 ,
     stagger : 0.4 ,
     scrollTrigger : {
       trigger : ".secoundsection .about" ,
       scroller : "#main",
-      markers:true ,
-      start : "top 70%",
+      markers: true ,
+      start : "top 30%",
       end : "top 20%",
       scrub : 3 ,
   }
@@ -79,15 +79,15 @@ pageoneanimations.from(".img",{
 secoundpageanimation.from("#page2 .about , .about h3", {
   y : "100%" ,
   duration :0.6,
-    // ease : Power4 ,
+    ease : Power4 ,
     stagger : 0.4 ,
     scrollTrigger : {
-      trigger : "#page2 .secoundsection" ,
+      trigger : ".secoundsection" ,
       scroller : "#main",
-      markers:true ,
+      markers: true ,
       start : "top 70%",
       end : "top 20%",
-      scrub : 2 ,
+      scrub : 3 ,
   }
 })
 }
