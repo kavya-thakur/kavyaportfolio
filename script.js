@@ -57,7 +57,7 @@ secoundpageanimation.from("#page2 .about , .about h3", {
     scrollTrigger : {
       trigger : ".secoundsection .about" ,
       scroller : "#main",
-      markers: true ,
+      // markers: true ,
       start : "top 30%",
       end : "top 20%",
       scrub : 3 ,
@@ -84,7 +84,7 @@ secoundpageanimation.from("#page2 .about , .about h3", {
     scrollTrigger : {
       trigger : ".secoundsection" ,
       scroller : "#main",
-      markers: true ,
+      // markers: true ,
       start : "top 70%",
       end : "top 20%",
       scrub : 3 ,
