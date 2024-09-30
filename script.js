@@ -54,7 +54,7 @@ mm.add("(min-width:501px)", () => {
       // markers: true,
       start: "top 40%",
       end: "top 30%",
-      scrub: 2,
+      scrub: 3,
     }
   })
 })
@@ -84,7 +84,7 @@ mm.add("(max-width:500px)", () => {
       markers: true,
       start: "top 40%",
       end: "top 30%",
-      scrub: 2,
+      scrub: 3,
     }
   })
 })
@@ -96,7 +96,7 @@ thirdpageaniamtion.from(".projectheading h1 , .projectheading i",{
     markers :true ,
     start : "top 70%",
     end : "top 40%",
-    scrub : 2 
+    scrub : 3
   }
 })
 let fourpageanimation = gsap.timeline()
@@ -109,6 +109,6 @@ scrollTrigger : {
 scroller: "#main",
 start : "top 70%",
 end: "top 40%" ,
-scrub:2
+scrub:3
 }
 })
