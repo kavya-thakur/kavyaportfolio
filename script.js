@@ -29,14 +29,10 @@ ScrollTrigger.refresh();
 
 pageoneanimations = gsap.timeline()
 secoundpageanimation = gsap.timeline()
-// pageoneanimations.from(".nav a" , {
-//     opacity : 0 ,
-//     // y : 30 , 
-//     duration : 0.4 ,
-//     delay :0.5
-// })
 
-if (window.innerWidth <= "500px") {
+let mm = gsap.matchMedia();
+mm.add("(max-width:500px)" ,()=> {
+  //mobile
   pageoneanimations.from(".hero-heading1 h1 , .hero-heading2 h1"  , {
     y : "100%",
     duration :0.6,
@@ -55,15 +51,16 @@ secoundpageanimation.from("#page2 .about , .about h3", {
     ease : Power4 ,
     stagger : 0.4 ,
     scrollTrigger : {
-      trigger : ".secoundsection .about" ,
-      scroller : "#main",
-      // markers: true ,
+      trigger : ".secoundsection" ,
+      // scroller : ".secoundsection",
+      markers: true ,
       start : "top 30%",
       end : "top 20%",
       scrub : 3 ,
   }
 })
-} else {
+})
+ mm.add("(min-width:501px)", ()=> {
   pageoneanimations.from(".hero-heading1 h1 , .hero-heading2 h1"  , {
     y : "100%",
     duration :0.6,
@@ -84,10 +81,10 @@ secoundpageanimation.from("#page2 .about , .about h3", {
     scrollTrigger : {
       trigger : ".secoundsection" ,
       scroller : "#main",
-      // markers: true ,
-      start : "top 70%",
+      markers: true ,
+      start : "top 30%",
       end : "top 20%",
       scrub : 3 ,
   }
 })
-}
+ })
