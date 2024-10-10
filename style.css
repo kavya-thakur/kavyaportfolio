@@ -169,7 +169,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20vw;
-    overflow: hidden;
 }
 
 .projectheading span {
@@ -377,7 +376,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
     padding-top: 6vw;
 }
 
