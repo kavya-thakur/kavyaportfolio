@@ -116,7 +116,7 @@ mm.add("(max-width:500px)", () => {
     opacity: 0
   })
   pageoneanimations.from(".img", {
-    opacity: 0,
+    y: 110,
   })
 //   secoundpageanimation.from(".h2 h3", {
 //     y: "100%",
@@ -133,27 +133,27 @@ mm.add("(max-width:500px)", () => {
 //     }
 //   })
 })
-thirdpageaniamtion.from(".projectheading h1 , .projectheading i",{
-  y : "100%" ,
-  scrollTrigger : {
-    trigger : ".projectheading h1",
-    scroller : "#main",
-    // markers :true ,
-    start : "top 70%",
-    end : "top 40%",
-    scrub : 3
-  }
-})
-let fourpageanimation = gsap.timeline()
+// thirdpageaniamtion.from(".projectheading h1 , .projectheading i",{
+//   y : "100%" ,
+//   scrollTrigger : {
+//     trigger : ".projectheading h1",
+//     scroller : "#main",
+//     // markers :true ,
+//     start : "top 70%",
+//     end : "top 40%",
+//     scrub : 3
+//   }
+// })
+// let fourpageanimation = gsap.timeline()
 
-fourpageanimation.from(".contactline h1" , {
-y : "100%" ,
-scrollTrigger : {
-  trigger: ".contactline",
-  // markers: true,
-scroller: "#main",
-start : "top 70%",
-end: "top 40%" ,
-scrub:3
-}
-})
+// fourpageanimation.from(".contactline h1" , {
+// y : "100%" ,
+// scrollTrigger : {
+//   trigger: ".contactline",
+//   // markers: true,
+// scroller: "#main",
+// start : "top 70%",
+// end: "top 40%" ,
+// scrub:3
+// }
+// })
