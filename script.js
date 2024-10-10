@@ -105,19 +105,19 @@ mm.add("(min-width:501px)", () => {
 })
 
 let thirdpageaniamtion = gsap.timeline()
-// mm.add("(max-width:500px)", () => {
-//   pageoneanimations.from(".hero-heading1 h1 , .hero-heading2 h1", {
-//     y: "100%",
-//     duration: 0.6,
-//     ease: Power4,
-//     stagger: 0.4
-//   })
-//   pageoneanimations.from(".svg", {
-//     opacity: 0
-//   })
-//   pageoneanimations.from(".img", {
-//     opacity: 0,
-//   })
+mm.add("(max-width:500px)", () => {
+  pageoneanimations.from(".hero-heading1 h1 , .hero-heading2 h1", {
+    y: "100%",
+    duration: 0.6,
+    ease: Power4,
+    stagger: 0.4
+  })
+  pageoneanimations.from(".svg", {
+    opacity: 0
+  })
+  pageoneanimations.from(".img", {
+    opacity: 0,
+  })
 //   secoundpageanimation.from(".h2 h3", {
 //     y: "100%",
 //     duration: 0.6,
@@ -132,7 +132,7 @@ let thirdpageaniamtion = gsap.timeline()
 //       scrub: 3,
 //     }
 //   })
-// })
+})
 thirdpageaniamtion.from(".projectheading h1 , .projectheading i",{
   y : "100%" ,
   scrollTrigger : {
